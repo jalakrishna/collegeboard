@@ -17,12 +17,6 @@ public class ReadConfigProperties {
         }
 
         Properties prop = new Properties();
-        try {
-            prop.load(input);
-        } catch (IOException e) {
-
-            e.printStackTrace();
-        }
 
     }
 
