@@ -1,6 +1,8 @@
 package com.automation.helper;
 
+import java.io.IOException;
 import java.io.InputStream;
+import java.util.Properties;
 
 public class ReadConfigProperties {
 
@@ -12,6 +14,14 @@ public class ReadConfigProperties {
             System.out.println(input);
         } else {
             System.out.println("NULL");
+        }
+
+        Properties prop = new Properties();
+        try {
+            prop.load(input);
+        } catch (IOException e) {
+
+            e.printStackTrace();
         }
 
     }
